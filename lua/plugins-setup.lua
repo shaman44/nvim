@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
         'kyazdani42/nvim-web-devicons', -- optional, for file icon
       }
   }
+  use { 'chomosuke/term-edit.nvim', tag = 'v1.*' }
 
   use {
   'VonHeikemen/lsp-zero.nvim',
