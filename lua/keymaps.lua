@@ -20,10 +20,15 @@ keymap.set("n", "<C-p>", "<cmd>Telescope git_files<cr>") -- find files within cu
 
 
 --moving around windows
-keymap.set("n", "<C-h>", "<C-w>h")
-keymap.set("n", "<C-k>", "<C-w>k")
-keymap.set("n", "<C-j>", "<C-w>j")
-keymap.set("n", "<C-l>", "<C-w>l")
+--keymap.set("n", "<C-h>", "<C-w>h")
+--keymap.set("n", "<C-k>", "<C-w>k")
+--keymap.set("n", "<C-j>", "<C-w>j")
+--keymap.set("n", "<C-l>", "<C-w>l")
+
+keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
+keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>")
+keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>")
+keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
 
 keymap.set("n", "<CS-Up>", ":resize -2<CR>")
 keymap.set("n", "<CS-Down>", ":resize +2<CR>")
